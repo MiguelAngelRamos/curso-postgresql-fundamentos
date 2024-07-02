@@ -47,4 +47,13 @@ insert into pacientes(nombre, especie, raza, edad, "dueño", telefono) values
 ('Max', 'perro', 'golden retriever', 6, 'Carlos Díaz', '423423423'),
 ('Simba', 'gato', 'bengalí', 1, 'Marta López', '423423424'),
 ('Buddy', 'perro', 'beagle', 4, 'Luis Martínez', '423423425');
+
+
+
+insert into servicios(descripcion, costo) values 
+('Consulta general', 50.00),
+('Vacunación', 25.00),
+('Desparasitación', 30.00),
+('Cirugía', 200.00),
+('Consulta especializada', 100.00);
 ```
