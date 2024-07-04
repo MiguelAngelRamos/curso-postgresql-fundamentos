@@ -15,6 +15,22 @@ create table cursos(
     references instructores(id)
 );
 
+insert into instructores (nombre, email) values 
+('juan perez', 'juan.perez@example.com'),
+('maria lopez', 'maria.lopez@example.com');
+
+select * from instructores;
+
+insert into cursos(titulo, descripcion, instructor_id) values
+('curso de python', 'arpende python desde cero', 1),
+('curso de postgresql', 'base de datos con postgresql', 2),
+('curso de javascript', 'desarrollo web con javascript', 1);
+
+select * from cursos;
+
+select cursos.titulo, cursos.descripcion, instructores.nombre
+from cursos
+join instructores on cursos.instructor_id = instructores.id;
 
 
 ```
