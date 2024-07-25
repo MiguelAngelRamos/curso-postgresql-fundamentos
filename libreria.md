@@ -33,7 +33,7 @@ select * from authors;
 
 select
 	i.title ,
-	a."name" ,
+	a."name" 
 from
 	authors a
 inner join books i
